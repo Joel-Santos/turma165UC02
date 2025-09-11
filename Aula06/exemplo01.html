@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" name="nome" id="nome" placeholder="Nome completo" maxlength="50" minlength="3">
+    <form action="salvar.html" method="post">
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" maxlength="50" minlength="3" required>
         <br>
 	<input type="radio" id="masculino" name="genero" value="masculino" >
 	<label for="masculino">Masculino </label>
@@ -37,7 +37,7 @@
     <input type="checkbox" id="banana" name="frutas" value="banana" checked>
     <label for="banana">Banana</label>
     <br>
-
+    <input type="submit" value="Enviar-">
 	
     </form>
 

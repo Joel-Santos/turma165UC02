@@ -1,0 +1,16 @@
+body{
+   background-color: rgb(223, 223, 231);
+}
+h1{
+    color:rgb(30, 213, 152);
+}
+h3{
+    color: blueviolet;
+}
+label{
+    color: brown;
+}
+.texto{
+    color: chartreuse;
+}
+

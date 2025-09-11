@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Página de Cadastro</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>
+                Cadastro
+            </legend>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="email@teste.com" required>
+            <br>
+            <label for="data">Data Nascimento: </label>
+            <input type="date" name="data" id="data" required>
+            <br>
+            <label for="genero">Gênero:</label>
+            <select name="genero" id="genero" required>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="o">Outro</option>
+            </select>
+            <label for="telefone">telefone: </label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <br>
+            <label for="endereco">Endereço Pessoal:</label>
+            <input type="text" name="endereco" id="endereco" required>
+            <br>
+            <label for="estado">Estado: </label>
+            <input type="text" name="estado" id="estado" required>
+            <br>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" required>
+            <br>
+            <label for="confirmarSenha">Confirmar Senha: </label>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" required>
+            <br>
+            <input type="checkbox" name="termos" id="termos" required>
+            <label for="termos">Concordo com os termos. </label>
+            <br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar Dados">
+            <br>
+            <a href="index.html">Já tem login? Voltar a página de Login</a>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
