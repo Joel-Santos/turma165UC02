@@ -1,5 +1,5 @@
 body{
-   background-color: rgb(223, 223, 231);
+   background-color: rgb(223, 223, 231); /*background do body ou cor de fundo; */
 }
 h1{
     color:rgb(30, 213, 152);
@@ -12,5 +12,8 @@ label{
 }
 .texto{
     color: chartreuse;
+}
+#titulo{
+    color:blue;
 }
 
