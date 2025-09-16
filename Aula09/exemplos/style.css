@@ -1,0 +1,23 @@
+.inline-block{
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 10px;
+    vertical-align:middle;
+    padding: 10px;
+}
+
+.grid-container{
+    background-color: bisque;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 8rem 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
