@@ -35,7 +35,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 22rem;
+    width: 24rem;
     height: 648px;
     color: #111111;
     position: relative;
@@ -54,7 +54,7 @@ section img.imgPrato {
 }
 
 section h3 {
-    margin: 3.125rem 0 0 2rem;
+    margin: 1rem 1.875rem;
     margin-bottom: .625rem;
     text-transform: uppercase;
     text-align: left;
@@ -66,37 +66,38 @@ section h5 {
     font-size: 1.25rem;
     text-align: left;
     margin: 2rem 0 0;
+    width: 80%;
 }
 
 .coracao {
-    width: 7.875rem;
-    height: 7.875rem;
+    width: 5rem;
+    height: 5rem;
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 70%;
 
 }
 
 .coracao img {
-    width: 7.875rem;
-    height: 7.9375rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: contain;
     rotate: -50deg;
 }
 
 
 .estrela {
-    width: 7.875rem;
-    height: 7.875rem;
+    width: 5rem;
+    height: 5rem;
     position: absolute;
-    bottom: 10%;
-    left: 60%;
+    bottom: 20%;
+    left: 70%;
     margin-bottom: 2rem;
 }
 
 .estrela img {
-    width: 7.5rem;
+    width: 5rem;
     height: 6.8rem;
     object-fit: contain;
-    rotate: -50deg;
+    rotate: -30deg;
 }
