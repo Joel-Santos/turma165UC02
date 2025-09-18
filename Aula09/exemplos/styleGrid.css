@@ -22,11 +22,11 @@ main{
     grid-area: main;
     background-color: blueviolet;
 }
-.left{
+aside:nth-child(1){
     grid-area: asideLeft;
     background-color: chartreuse;
 }
-.right{
+aside:nth-child(2){
     grid-area: asideRight;
     background-color: rgb(217, 255, 0);
 }

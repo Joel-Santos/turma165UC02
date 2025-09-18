@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+header footer {
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fbf0e8;
+    padding: 10px;
+    border-radius: .3125rem;
+    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 500px;
+    color: #111111;
+    position: relative;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 18px;
+}
+
+section h3 {
+    margin: 23px 0 0 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section h5 {
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 0 0;
+
+}
+
+
+.estrela,
+.coracao {
+    position: absolute;
+    rotate: -25deg;
+
+}
+
+/* estrela sempre centralizada na pizza */
+.estrela {
+    width: 7.8125rem;
+    height: 7.25rem;
+    top: 46%;
+    left: 40%;
+}
+
+/* coração sempre no canto superior direito do card */
+.coracao {
+    width: 150px;
+    height: 130px;
+    top: 0%;
+    left: 50%;
+   
+}
