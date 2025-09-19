@@ -1,0 +1,71 @@
+:root {
+    --cor-primaria: rgb(252, 92, 59);
+    --font-corpo: "Montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-corpo);
+    background-color: #fcfcfc;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 80px;
+    color: var(--cor-primaria);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 89%);
+    gap: 32px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+    height: 25rem;
+    width: 22rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* line-height: 2rem; */
+ 
+}
+img{
+    width: 100%;
+    height: 10rem;
+    object-fit:fill
+}
+h3{
+    text-transform: capitalize;
+}
+
+h3, p{
+    text-align: left;
+}
+p::first-letter{
+    text-transform: capitalize;
+}
+
+button{
+    background-color: var(--cor-primaria);
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fcfcfc;
+
+}
+
+
+
