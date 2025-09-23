@@ -1,0 +1,20 @@
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    height: 20rem;
+    background-color: black;
+  
+}
+
+.flex-item{
+    background-color: lightblue;
+    padding: 1.25rem;
+    width: 5rem;
+ 
+ 
+}
