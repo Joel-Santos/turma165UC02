@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.box {
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background: tomato;
+}
+.box2 {
+    background: steelblue;
+}
+.box3 {
+    background: seagreen;
+}
+
+@media (max-width: 48rem) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 30rem) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
