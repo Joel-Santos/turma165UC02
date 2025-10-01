@@ -1,0 +1,124 @@
+/* Variáveis globais */
+:root {
+    --cor-fundo: #f0f0f0;
+    --cor-header: #6200ea;
+    --cor-footer: #333;
+    --cor-texto-claro: #fff;
+    --cor-card: #fff;
+    --sombra-card: rgba(0, 0, 0, 0.2);
+    --padding-geral: .625rem;
+    --padding-card: 1.25rem;
+    --margin-top-menu: .625rem;
+    --border-radius: .625rem;
+    --gap-principal: .9375rem;
+    --fonte-principal: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    padding: var(--padding-geral);
+    gap: var(--gap-principal);
+    font-family: var(--fonte-principal);
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor-header);
+    color: var(--cor-texto-claro);
+    padding: var(--padding-geral);
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--gap-principal);
+    justify-content: center;
+    margin-top: var(--margin-top-menu);
+    transition: background 1s ease;
+}
+
+nav ul li:hover {
+    background-color: #151515;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-principal);
+}
+
+section {
+    background-color: var(--cor-card);
+    padding: var(--padding-card);
+    border-radius: var(--border-radius);
+    box-shadow: 0 .125rem .3125rem var(--sombra-card);
+}
+
+footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-texto-claro);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: var(--padding-geral);
+}
+
+/* Tablet */
+@media (min-width:48rem) {
+    body {
+        background-color: aquamarine;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    header {
+        background-color: rgb(174, 0, 0);
+        border-radius: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: var(--padding-geral);
+    }
+
+    section {
+        width: 45%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        background-color: cadetblue;
+        color: var(--cor-texto-claro);
+    }
+    section:nth-child(3) {
+        flex: 1;
+        margin: 0% 2% 0% 2%;
+    }
+    section p{
+        font-size: 1.5rem;
+    }
+    footer {
+        border-radius: 0;
+    }
+}

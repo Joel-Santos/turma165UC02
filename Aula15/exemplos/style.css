@@ -159,3 +159,26 @@ main {
 .carrinho::after {
   right: .625rem;
 }
+
+.container{
+  margin-top: 3rem;
+  perspective: 50rem;
+  background-color: antiquewhite;
+}
+
+.rotacionar-hover{
+  width: 10rem;
+  transition: transform 1s ease;
+}
+.rotacionar-hover:hover{
+transform: rotateY(180deg);
+}
+@keyframes rotacao3D {
+  from{ transform: rotateX(0deg) rotateY(0deg);}
+  to{transform: rotateX(0deg) rotateY(360deg) ;}
+}
+.rotacionar-3d{
+  width: 10rem;
+  animation: rotacao3D 4s linear infinite;
+  transform-origin: center;
+}
