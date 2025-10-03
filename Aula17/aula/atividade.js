@@ -30,7 +30,7 @@ function questao03() {
     let tempF = celsius * 9/5 +32;
     alert(`Tempertaura em Celsius ${celsius} - Convertida para Fahrenheit ${tempF}`);
 }
-questao03();
+//questao03();
 
 // 4. Retângulo – Perímetro e Área
 // Peça a base e a altura de um retângulo.
@@ -38,10 +38,35 @@ questao03();
 //A = b x h
 //P = 2b + 2h 
 
+function questao04() {
+    let base = prompt("Informe a base");
+    let altura = prompt("Informe a altura");
+    let area = base * altura;
+    let perimetro = 2*base + 2*altura;
+    alert(`Área é: ${area} - Perímetro ${perimetro}`);
+}
+//questao04();
+
+
 // 5. Idade pelo Ano de Nascimento
 // Solicite o ano de nascimento do usuário e calcule sua idade atual.
 // Saída esperada: Uma frase dizendo o ano de nascimento e a idade.
 
+function questao05() {
+    let ano = prompt("Informe o seu ano de nascimento");
+    let idade = 2025 - ano;
+    alert(`Sua idade é ${idade}.`);
+}
+//questao05();
+
+
 // 6. Ano de Nascimento a partir da idade
 // Solicite a idade do usuário e calcule seu ano de nascimento.
-// Saída esperada: Uma frase dizendo o ano de nascimento e a idade.
+// Saída esperada: Uma frase dizendo o ano de nascimento e a idade.function questao05() {
+
+function questao06() {
+    let idade = prompt("Informe a sua idade");
+    let anoNascimento = 2025 - idade;
+    alert(`Você nasceu em ${anoNascimento}.`);
+}
+//questao06();
