@@ -7,19 +7,13 @@ function limpar() {
 }
 
 function adicionar(valor) {
-    if (valor === "*") {
-        visor.textContent += "×";
-    } else if (valor === "/") {
-        visor.textContent += "÷";
-    } else {
-        expressao += valor;
-        visor.textContent += expressao;
-    }
-
+    expressao += valor;
+    visor.textContent = expressao;
 }
 
 function calcular() {
-    visor.textContent = eval(expressao);
+    let resultado = expressao.replace("×", "*").replace("÷", "/");
+    visor.textContent = eval(resultado);
     expressao = visor.textContent;
 }
 function apagar() {
