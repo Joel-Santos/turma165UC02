@@ -21,3 +21,9 @@ console.log(meuArray);
 for(let i=0; i<meuArray.length; i++){
     console.log(`Posição [${i}]: ${meuArray[i]}`);
 }
+
+meuArray.forEach((p, i) =>{
+    console.log(p);
+    console.log(i);
+});
+
