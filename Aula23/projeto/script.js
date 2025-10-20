@@ -1,13 +1,18 @@
-let tarefas = [];
+let tarefas = []; //array 
 let input = document.querySelector("#tarefa");
 let lista = document.querySelector("#lista");
 let btnAdd = document.querySelector("#btnAdd");
+let indiceEdicao = null;
 
 btnAdd.addEventListener("click", () => {
     if (input.value === "") {
         alert("Digite uma tarefa");
-    } else {
+    } else if(indiceEdicao === null) {
         tarefas.push(input.value);
+    }else{
+        tarefas[indiceEdicao] = input.value;
+        indiceEdicao = null;
+        btnAdd.textContent = "Adicionar";
     }
     input.value = "";
     console.log(tarefas);
@@ -32,11 +37,15 @@ function mostrarTarefas() {
 }
 
 function apagar(i) {
-    tarefas.splice(i, 1);
+    let excluir = window.confirm(`Você realmente deseja excluir a tarefa ${tarefas[i]} ?`);
+    if (excluir) {
+        tarefas.splice(i, 1);
+    }
     mostrarTarefas();
 }
 
 function atualizar(i) {
-    btnAdd.textContent ="Atualizar";
+    btnAdd.textContent = "Atualizar";
     input.value = tarefas[i];
+    indiceEdicao = i;
 }
