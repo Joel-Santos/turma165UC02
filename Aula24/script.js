@@ -1,9 +1,11 @@
-let alunos = []; //array 
+let alunos = JSON.parse(localStorage.getItem("alunos")) || []; //array 
 let nomeAluno = document.querySelector("#nome");
 let matriculaAluno = document.querySelector("#matricula");
 let lista = document.querySelector("#lista");
 let btnAdd = document.querySelector("#btnAdd");
 let indiceEdicao = null;
+
+mostrarAlunos();
 
 btnAdd.addEventListener("click", () =>{
 
@@ -24,6 +26,7 @@ btnAdd.addEventListener("click", () =>{
     nomeAluno.value = "";
     matriculaAluno.value = "";
     mostrarAlunos();
+    salvarLocalStorage();
 })
 
 
@@ -50,6 +53,7 @@ function apagar(i) {
         alunos.splice(i, 1);
     }
     mostrarAlunos();
+    salvarLocalStorage();
 }
 
 function atualizar(i) {
@@ -57,4 +61,8 @@ function atualizar(i) {
     nomeAluno.value = alunos[i].nome;
     matriculaAluno.value = alunos[i].matricula;  
     indiceEdicao = i;
+}
+
+function salvarLocalStorage(){
+    localStorage.setItem("alunos", JSON.stringify(alunos));
 }
