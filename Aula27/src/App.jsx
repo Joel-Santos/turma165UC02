@@ -8,10 +8,12 @@ export default function App(){
     "Aula de Java",
     "Aula de PHP",
     "Aula de Grid css",
-    "Teste"
+    "Teste",
+    "Aula"
   ];
     return(
       <>
+      <Home />
         <h1>React</h1>
         <p>Teste</p>
         <Card conteudo="Aula de React + CSS" />
