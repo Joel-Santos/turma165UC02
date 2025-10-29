@@ -1,10 +1,11 @@
 import Livro from "../../components/Livro/Livro";
+import style from "./ListLivro.module.css";
 
 export default function ListLivro({ livros = []}) {
 
     return (
         <>
-            <div>
+            <div className={style.container}>
                 {
                     livros.length > 0 ?
                         livros.map((liv, index) => (

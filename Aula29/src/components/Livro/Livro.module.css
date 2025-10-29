@@ -1,0 +1,29 @@
+.card{
+    width: 20rem;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(167, 193, 193);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card img{
+    width: 8rem;
+    height: auto;
+    margin: 0 auto;
+    
+}
+.card p{
+    margin:0; 
+}
+.disponivel{
+    font-size: 1.3rem;
+    color: aquamarine;
+}
+.indisponivel{
+    font-size: 1.3rem;
+    color: rgb(254, 80, 80);
+}
+
