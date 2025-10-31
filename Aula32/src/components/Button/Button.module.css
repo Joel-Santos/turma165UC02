@@ -1,0 +1,23 @@
+.button{
+    padding: 0.9rem 1.2rem;
+    margin: 0.3rem;
+    border:none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.button:hover{
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+.default{
+    background-color: #3498db;
+}
+
+.sucess {
+    background-color: #2ecc71;
+}
+
+.danger{
+    background-color: #e74c3c;
+}
