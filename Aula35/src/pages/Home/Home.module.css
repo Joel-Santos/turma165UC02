@@ -1,0 +1,57 @@
+:root {
+    --vermelho-pokedex: #d32f2f;
+    --vermelho-escuro: #a62828;
+    --borda-cinza: #666;
+    --fonte: 'Press Start 2P', monospace;
+    --branco: #fff;
+    --verde-tela: #9efb98;
+  }
+  
+  .home {
+    font-family: var(--fonte);
+    background: linear-gradient(180deg, #ff5252 0%, #b71c1c 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1rem;
+    color: var(--branco);
+    text-align: center;
+  }
+  
+  /* Título principal */
+  .home h1 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem #000;
+  }
+  
+  /* Campo de busca */
+  .home input {
+    width: 20rem;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: 0.25rem solid var(--borda-cinza);
+    font-family: var(--fonte);
+    font-size: 0.6rem;
+    text-align: center;
+    background-color: var(--branco);
+    color: #000;
+    box-shadow: inset 0 0 0.4rem #00000033;
+    outline: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home input:focus {
+    border-color: var(--verde-tela);
+    box-shadow: 0 0 0.8rem var(--verde-tela);
+  }
+  
+  /* Mensagem de erro */
+  .home p {
+    font-size: 0.6rem;
+    color: yellow;
+    margin-bottom: 1rem;
+  }
+  

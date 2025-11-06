@@ -90,7 +90,7 @@ function abastecer(){
     <>
       <div className={styles.painel}>
         <h2>Painel do Veículo</h2>
-        <p><strong>Status:</strong> {velocidade===0 ?  "❌ Parado" : ligado ? "🚗 Ligado" : "🛑 Desligado"}</p>
+        <p><strong>Status:</strong> {velocidade===0 && ligado ?  "❌ Parado" : ligado ? "🚗 Em movimento" : "🛑 Desligado"}</p>
         <p><strong>Velocidade:</strong> {velocidade} km/h</p>
         <p><strong>Combustível:</strong> {combustivel.toFixed(0)}%</p>
         <progress
